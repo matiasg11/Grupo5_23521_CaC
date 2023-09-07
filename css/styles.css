@@ -1,7 +1,7 @@
 html {
     box-sizing: border-box;
-    background: #ffc600;
-    font-family: 'helvetica neue';
+    background: radial-gradient(blue,yellow);
+    font-family: 'arial';
     font-size: 20px;
     font-weight: 200;
     
@@ -24,16 +24,16 @@ html {
     overflow: hidden;
     display: flex;
     max-width: 100%;
+    flex-direction: row;
+
   }
 
   .hoja {
-    background: #6B0F9C;
+    background: #030050;
     box-shadow: inset 0 0 0 5px rgba(255,255,255,0.1);
     color: white;
     text-align: center;
     align-items: center;
-    /* Safari transitionend event.propertyName === flex */
-    /* Chrome + FF transitionend event.propertyName === flex-grow */
     transition:
       font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
       flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
@@ -50,11 +50,11 @@ html {
 
   .hoja1 { background-image:url(../imgs/mendoza/aconcagua.jpg); }
   .hoja2 { background-image:url(../imgs/mendoza/lasleñas.jpg); }
-  .hoja3 { background-image:url(../imgs/mendoza/termas_cacheuta.jpg); }
-  .hoja4 { background-image:url(../imgs/mendoza/viñedo.jpg); }
+  .hoja5 { background-image:url(../imgs/mendoza/termas_cacheuta.jpg); }
+  .hoja6 { background-image:url(../imgs/mendoza/viñedo.jpg); }
 
 
-  /* Flex Children */
+  
   .hoja > * {
     margin: 0;
     width: 100%;
@@ -66,6 +66,7 @@ html {
     flex: 1 0 auto;
     display:flex;
     
+    
   }
 
   .hoja > *:first-child{
@@ -75,15 +76,15 @@ html {
     transform: translateY(100%)
   }
 
-  .hoja.open-active > *:first-child{
+  .hoja.seleccionada-activa > *:first-child{
     transform: translateY(0);
   }
-  .hoja.open-active > *:last-child{
+  .hoja.seleccionada-activa > *:last-child{
     transform: translateY(0);
   }
-  .hoja.open {
+  .hoja.seleccionada {
     flex:5;
-    font-size: 4em;
+    font-size: 1.5em;
   }
 
 
@@ -95,9 +96,9 @@ html {
   }
   
   .hoja p:nth-child(2) {
-    font-size: 4em;
+    font-size: 2em;
   }
 
-  .hoja.open {
-    font-size: 40px;
+  .hoja.seleccionada {
+    font-size: 2rem;
   }
