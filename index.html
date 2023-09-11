@@ -1,54 +1,936 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/styles.css" />
-        <title>Document</title>
-    </head>
-    <body>
-        <header>
-            <nav></nav>
-        </header>
-        <main>
-            <section id="home">
-                <h1>Conocé Argentina</h1>
-                <img src="" alt="Fondo principal" />
-            </section>
-            <section id="destinos">
-                <h2>¿A qué destino te gustaría viajar hoy?</h2>
+<html lang="es">
 
-                <div class="bandoneon">
-                    <div class="hoja hoja1">
-                        <p>Cataratas</p>
-                        <p>Este</p>
-                        <p>Del Iguazú</p>
-                    </div>
-                    <div class="hoja hoja2">
-                        <p>Salta</p>
-                        <p>Norte</p>
-                        <p>La Linda</p>
-                    </div>
-                    <div class="hoja hoja5">
-                        <p>Mendoza</p>
-                        <p>Oeste</p>
-                        <p>Sol y vino</p>
-                    </div>
-                    <div class="hoja hoja6">
-                        <p>Neuquén</p>
-                        <p>Sur</p>
-                        <p>7 lagos</p>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <h2>¿Cuándo querés viajar?</h2>
-            </section>
-            <section>
-                <h2>¿Dónde querés hospedarte?</h2>
-            </section>
-        </main>
-    </body>
+<head>
+	<title>Turismo Arg</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <script src="js/main.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">Turismo Arg<span>Agencia de Viajes</span></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active"><a href="index.html" class="nav-link">Inicio</a></li>
+					<li class="nav-item"><a href="about.html" class="nav-link">Nosotros</a></li>
+					<li class="nav-item"><a href="destination.html" class="nav-link">Destinos</a></li>
+					<li class="nav-item"><a href="hotel.html" class="nav-link">Hoteles</a></li>
+					<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+					<li class="nav-item"><a href="contact.html" class="nav-link">Contacto</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- END nav -->
+
+	<div class="hero-wrap js-fullheight" style="background-image: url('images/header_coloniasuiza.jpg');">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
+				<div class="col-md-7 ftco-animate">
+					<span class="subheading">Bienveniodos a Turismo Arg</span>
+					<h1 class="mb-4">Descubre tu lugar favorito con nosotros</h1>
+					<p class="caps">Viaja a cualquier parte de nuestro pais, sin dar vueltas</p>
+				</div>
+				<a href="https://vimeo.com/134982139"
+					class="icon-video popup-vimeo d-flex align-items-center justify-content-center mb-4">
+					<span class="fa fa-play"></span>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<section class="ftco-section ftco-no-pb ftco-no-pt">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="ftco-search d-flex justify-content-center">
+						<div class="row">
+							<div class="col-md-12 nav-link-wrap">
+								<div class="nav nav-pills text-center" id="v-pills-tab" role="tablist"
+									aria-orientation="vertical">
+									<a class="nav-link active mr-md-1" id="v-pills-1-tab" data-toggle="pill"
+										href="#v-pills-1" role="tab" aria-controls="v-pills-1"
+										aria-selected="true">Buscar Destinos</a>
+
+									<a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2"
+										role="tab" aria-controls="v-pills-2" aria-selected="false">Hoteles</a>
+
+								</div>
+							</div>
+							<div class="col-md-12 tab-wrap">
+
+								<div class="tab-content" id="v-pills-tabContent">
+
+									<div class="tab-pane fade show active" id="v-pills-1" role="tabpanel"
+										aria-labelledby="v-pills-nextgen-tab">
+										<form action="#" class="search-property-1">
+											<div class="row no-gutters">
+												<div class="col-md d-flex">
+													<div class="form-group p-4 border-0">
+														<label for="#">Destinos</label>
+														<div class="form-field">
+															<div class="icon"><span class="fa fa-search"></span></div>
+															<input type="text" class="form-control"
+																placeholder="Buscar">
+														</div>
+													</div>
+												</div>
+												<div class="col-md d-flex">
+													<div class="form-group p-4">
+														<label for="#">Fecha de entrada</label>
+														<div class="form-field">
+															<div class="icon"><span class="fa fa-calendar"></span></div>
+															<input type="text" class="form-control checkin_date"
+																placeholder="Fecha de entrada">
+														</div>
+													</div>
+												</div>
+												<div class="col-md d-flex">
+													<div class="form-group p-4">
+														<label for="#">Fecha de salida</label>
+														<div class="form-field">
+															<div class="icon"><span class="fa fa-calendar"></span></div>
+															<input type="text" class="form-control checkout_date"
+																placeholder="Fecha de salida">
+														</div>
+													</div>
+												</div>
+												<div class="col-md d-flex">
+													<div class="form-group p-4">
+														<label for="#">Limite de precio</label>
+														<div class="form-field">
+															<div class="select-wrap">
+																<div class="icon"><span
+																		class="fa fa-chevron-down"></span></div>
+																<select name="" id="" class="form-control">
+																	<option value="">$100</option>
+																	<option value="">$10,000</option>
+																	<option value="">$50,000</option>
+																	<option value="">$100,000</option>
+																	<option value="">$200,000</option>
+																	<option value="">$300,000</option>
+																	<option value="">$400,000</option>
+																	<option value="">$500,000</option>
+																	<option value="">$600,000</option>
+																	<option value="">$700,000</option>
+																	<option value="">$800,000</option>
+																	<option value="">$900,000</option>
+																	<option value="">$1,000,000</option>
+																	<option value="">$2,000,000</option>
+																</select>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-md d-flex">
+													<div class="form-group d-flex w-100 border-0">
+														<div class="form-field w-100 align-items-center d-flex">
+															<input type="submit" value="Buscar"
+																class="align-self-stretch form-control btn btn-primary">
+														</div>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+
+									<div class="tab-pane fade" id="v-pills-2" role="tabpanel"
+										aria-labelledby="v-pills-performance-tab">
+										<form action="#" class="search-property-1">
+											<div class="row no-gutters">
+												<div class="col-lg d-flex">
+													<div class="form-group p-4 border-0">
+														<label for="#">Destino</label>
+														<div class="form-field">
+															<div class="icon"><span class="fa fa-search"></span></div>
+															<input type="text" class="form-control"
+																placeholder="Buscar">
+														</div>
+													</div>
+												</div>
+												<div class="col-lg d-flex">
+													<div class="form-group p-4">
+														<label for="#">Fecha de entrada</label>
+														<div class="form-field">
+															<div class="icon"><span class="fa fa-calendar"></span></div>
+															<input type="text" class="form-control checkin_date"
+																placeholder="Fecha de entrada">
+														</div>
+													</div>
+												</div>
+												<div class="col-lg d-flex">
+													<div class="form-group p-4">
+														<label for="#">Fecha de salida</label>
+														<div class="form-field">
+															<div class="icon"><span class="fa fa-calendar"></span></div>
+															<input type="text" class="form-control checkout_date"
+																placeholder="Fecha de salida">
+														</div>
+													</div>
+												</div>
+												<div class="col-lg d-flex">
+													<div class="form-group p-4">
+														<label for="#">Limite de precio</label>
+														<div class="form-field">
+															<div class="select-wrap">
+																<div class="icon"><span
+																		class="fa fa-chevron-down"></span></div>
+																<select name="" id="" class="form-control">
+																	<option value="">$100</option>
+																	<option value="">$10,000</option>
+																	<option value="">$50,000</option>
+																	<option value="">$100,000</option>
+																	<option value="">$200,000</option>
+																	<option value="">$300,000</option>
+																	<option value="">$400,000</option>
+																	<option value="">$500,000</option>
+																	<option value="">$600,000</option>
+																	<option value="">$700,000</option>
+																	<option value="">$800,000</option>
+																	<option value="">$900,000</option>
+																	<option value="">$1,000,000</option>
+																	<option value="">$2,000,000</option>
+																</select>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg d-flex">
+													<div class="form-group d-flex w-100 border-0">
+														<div class="form-field w-100 align-items-center d-flex">
+															<input type="submit" value="Buscar"
+																class="align-self-stretch form-control btn btn-primary p-0">
+														</div>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+
+	<section class="ftco-section services-section">
+		<div class="container">
+			<div class="row d-flex">
+				<div class="col-md-6 order-md-last heading-section pl-md-5 ftco-animate d-flex align-items-center">
+					<div class="w-100">
+						<span class="subheading">Bienvenidos a Turismo Arg</span>
+						<h2 class="mb-4">Todo lo que podés visitar en Bariloche</h2>
+						<p>Bariloche te propone un sinfín de actividades, por eso es la capital nacional del turismo
+							aventura. Viví la aventura en los escenarios más variados, de la forma que más te guste. ¡El
+							mayor desafío será elegir qué hacer primero!</p>
+						<p>
+							La naturaleza en Bariloche te ofrece la posibilidad de realizar un montón de actividades
+							durante todo el año. Hay mucho para hacer y recorrer: playas, ríos, bosques, estepa,
+							deportes de aventura, caminar o, simplemente, contemplar sus sublimes paisajes.
+							Vení a disfrutar de su aire puro, siempre.
+							¡Descubrí Bariloche en todas sus temporadas!
+						</p>
+
+						<p><a href="#" class="btn btn-primary py-3 px-4">Buscar</a></p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+							<div class="services services-1 color-1 d-block img"
+								style="background-image: url(images/estepa-01.jpg);">
+								<div class="icon d-flex align-items-center justify-content-center"><span
+										class="flaticon-paragliding"></span></div>
+								<div class="media-body">
+									<h3 class="heading mb-3">Estepa</h3>
+									<h3 class="heading mb-3">Inmensa, pura, silenciosa… e imperdible.</h3>
+									<p>En la estepa patagónica, el cielo y la tierra se ponen de acuerdo para unirse en
+										un solo gran espectáculo.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+							<div class="services services-1 color-2 d-block img"
+								style="background-image: url(images/lago-nahuel-huapi-01.jpg);">
+								<div class="icon d-flex align-items-center justify-content-center"><span
+										class="flaticon-map"></span></div>
+								<div class="flaticon-map">
+									<h3 class="heading mb-3">Lagos y Playas</h3>
+									<h3 class="heading mb-3">Paisajes que son leyenda</h3>
+									<p>¿Querés descubrir lagos increíbles? Inspirate con estas recomendaciones. Es un
+										paseo obligado, la inmensidad de los lagos y playas de Bariloche esconde muchos
+										secretos que vale la pena develar.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+							<div class="services services-1 color-3 d-block img"
+								style="background-image: url(images/cerro.jpg);">
+								<div class="icon d-flex align-items-center justify-content-center"><span
+										class="flaticon-mountains"></span></div>
+								<div class="flaticon-mountains">
+									<h3 class="heading mb-3">Cerros</h3>
+									<h3 class="heading mb-3">La fuerza de la inmensidad</h3>
+									<p>Los cerros son los guardianes de nuestra ciudad, y uno de los destinos turísticos
+										más visitados de la Argentina y del continente. Nos rodean, nos protegen y nos
+										brindan un paisaje sublime y acogedor. ¿Estás visitando Bariloche? No podés
+										dejar de conocer alguno de nuestros imponentes cerros.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+							<div class="services services-1 color-4 d-block img"
+								style="background-image: url(images/paseo.jpg);">
+								<div class="icon d-flex align-items-center justify-content-center"><span
+										class="flaticon-tour-guide"></span></div>
+								<div class="flaticon-tour-guide">
+									<h3 class="heading mb-3">Paseos</h3>
+									<h3 class="heading mb-3">Descansar, es no cansarte de hacer cosas.</h3>
+									<p>Bariloche es una ciudad ideal para recorrer sus calles.
+										Cuenta con lugares para disfrutar dentro de sus cercanías y al aire libre
+										durante todo el año. Tres paseos que te llevarán donde la ciudad pierde su
+										nombre y empiezan paisajes auténticos.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section img ftco-select-destination" style="background-image: url(images/bg_3.jpg);">
+		<div class="container">
+			<div class="row justify-content-center pb-4">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<span class="subheading">Turismo Arg Ofrece Los Siguientes Lugares</span>
+					<h2 class="mb-4">Selecciona tu aventura</h2>
+					<h3 class="mb-4">Bariloche te propone un sinfín de actividades, por eso es la capital nacional del
+						turismo aventura. Viví la aventura en los escenarios más variados, de la forma que más te guste.
+						¡El mayor desafío será elegir qué hacer primero!</h3>
+
+				</div>
+			</div>
+		</div>
+		<div class="container container-2">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="carousel-destination owl-carousel ftco-animate">
+						<div class="item">
+							<div class="project-destination">
+								<a href="#" class="img" style="background-image: url(images/buceo_01.jpg);">
+									<div class="text">
+										<h3>Buceo</h3>
+										<!-- <span>8 Tours</span> -->
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="project-destination">
+								<a href="#" class="img" style="background-image: url(images/escalada_01.jpg);">
+									<div class="text">
+										<h3>Escalada</h3>
+										<!-- <span>2 Tours</span> -->
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="project-destination">
+								<a href="#" class="img" style="background-image: url(images/cabalgata_01.jpg);">
+									<div class="text">
+										<h3>Cabalgatas</h3>
+										<!-- <span>5 Tours</span> -->
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="project-destination">
+								<a href="#" class="img" style="background-image: url(images/canopy_02.jpg);">
+									<div class="text">
+										<h3>Canopy</h3>
+										<!-- <span>5 Tours</span> -->
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="project-destination">
+								<a href="#" class="img" style="background-image: url(images/kayak_01.jpg);">
+									<div class="text">
+										<h3>Kayak de Travesía</h3>
+										<!-- <span>7 Tours</span> -->
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center pb-4">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<span class="subheading">Descubri La Aventura</span>
+					<h2 class="mb-4">Destinos Aventura</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 ftco-animate">
+					<div class="project-wrap">
+						<a href="#" class="img" style="background-image: url(images/kite_01.jpg);">
+							<span class="price">$5500/persona</span>
+						</a>
+						<div class="text p-4">
+							<h3><a href="#">Kitesurf</a></h3>
+							<p class="location"><span class="fa fa-map-marker"></span> En Bariloche podés esquiar en
+								todas las superficies, incluso en el aire. El kitesurf, también llamado kite,
+								kitesurfing, kiteboarding o kiteboard, es un deporte de navegación con tracción del
+								viento. Su nombre en inglés significa surfear con un barrilete. Esta aventura consiste
+								en el uso de un kite, del inglés barrilete o cometa, que moviliza al kiter, quien está
+								sujeto por cuatro o cinco cuerdas: dos fijas a la barra y las dos o tres restantes que
+								pasan por el centro de la botavara y se sujetan al cuerpo mediante un arnés. Este
+								sistema permite deslizarse sobre el agua con una tabla diseñada especialmente para este
+								deporte de aventura.</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 ftco-animate">
+					<div class="project-wrap">
+						<a href="#" class="img" style="background-image: url(images/bike_02.jpg);">
+							<span class="price">$5550/persona</span>
+						</a>
+						<div class="text p-4">
+
+							<h3><a href="#">Mountain Bike</a></h3>
+							<p class="location"><span class="fa fa-map-marker"></span> El parque nacional Nahuel Huapi
+								posee una geografía muy rica y variada, que lo convierte en el escenario ideal para la
+								práctica de ciclismo de montaña.</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 ftco-animate">
+					<div class="project-wrap">
+						<a href="#" class="img" style="background-image: url(images/nautica_02.jpg);">
+							<span class="price">$5550/persona</span>
+						</a>
+						<div class="text p-4">
+							<!-- <span class="days">7 Days Tour</span> -->
+							<h3><a href="#">Navegación</a></h3>
+							<p class="location"><span class="fa fa-map-marker"></span> Los vientos constantes del
+								incomparable Nahuel Huapi convierten a este lago en un verdadero paraíso para
+								navegantes. Rincones exclusivos a los que sólo se puede llegar en barco, solitarias
+								bahías ocultas y hermosas playas de ensueño para bañarse y relajarse.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 ftco-animate">
+					<div class="project-wrap">
+						<a href="#" class="img" style="background-image: url(images/parapente_01.jpg);">
+							<span class="price">$5550/persona</span>
+						</a>
+						<div class="text p-4">
+							<h3><a href="#">Parapente</a></h3>
+							<p class="location"><span class="fa fa-map-marker"></span> Así como Bariloche ofrece
+								experiencias inigualables en la tierra, también las ofrece en el cielo. Tendrás una
+								vivencia única e intensa al surcar las nubes cordilleranas en un parapente biplaza,
+								siempre con la compañía de un instructor altamente experimentado.</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 ftco-animate">
+					<div class="project-wrap">
+						<a href="#" class="img" style="background-image: url(images/pesca_02.jpg);">
+							<span class="price">$5550/persona</span>
+						</a>
+						<div class="text p-4">
+							<h3><a href="#">Pesca Deportiva</a></h3>
+							<p class="location"><span class="fa fa-map-marker"></span> El parque nacional Nahuel Huapi
+								posee una importante cuenca de lagos y ríos con costas de fácil acceso, particularmente
+								apropiadas para la reproducción de especies de gran valor deportivo, tales como la
+								trucha marrón y la trucha arco iris. Su pesca se denomina “deportiva” porque solo se
+								utilizan señuelos artificiales, como moscas y cucharas. Para practicarla se necesita
+								adquirir previamente un permiso de pesca.</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 ftco-animate">
+					<div class="project-wrap">
+						<a href="#" class="img" style="background-image: url(images/rafting_02.jpg);">
+							<span class="price">$5550/persona</span>
+						</a>
+						<div class="text p-4">
+							<h3><a href="#">Rafting</a></h3>
+							<p class="location"><span class="fa fa-map-marker"></span> Bariloche cuenta con la
+								posibilidad de practicar rafting con diferentes grados de dificultad, experimentando
+								emoción y vértigo en un marco natural siempre sorprendente.</p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section ftco-about img" style="background-image: url(images/banner_header_esb2b9.jpg);">
+		<div class="overlay"></div>
+		<div class="container py-md-5">
+			<div class="row py-md-5">
+				<div class="col-md d-flex align-items-center justify-content-center">
+					<a href="https://vimeo.com/281188795"
+						class="icon-video popup-vimeo d-flex align-items-center justify-content-center mb-4">
+						<span class="fa fa-play"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section ftco-about ftco-no-pt img">
+		<div class="container">
+			<div class="row d-flex">
+				<div class="col-md-12 about-intro">
+					<div class="row">
+						<div class="col-md-6 d-flex align-items-stretch">
+							<div class="img d-flex w-100 align-items-center justify-content-center"
+								style="background-image:url(images/como-llegar-avion-mapa_es30f4.png);">
+							</div>
+						</div>
+						<div class="col-md-6 pl-md-5 py-5">
+							<div class="row justify-content-start pb-3">
+								<div class="col-md-12 heading-section ftco-animate">
+									<span class="subheading">Sobre Bariloche</span>
+									<h2 class="mb-4">Estás donde querías estar. Estás en Bariloche.</h2>
+									<p>La ciudad está ubicada dentro del parque nacional Nahuel Huapi, junto a la
+										cordillera de los Andes. En el 2012 fue declarada capital nacional del turismo
+										de aventura, y en el 2015 capital nacional del chocolate.
+
+										Vení a disfrutar de Bariloche las cuatro estaciones del año. Encontrarás una
+										naturaleza que premia a cada visitante con paisajes maravillosos, desde picos
+										nevados y lengas cobrizas, hasta valles cubiertos de flores y aguas cristalinas.
+
+										En Bariloche tenés variedad de actividades para disfrutar: excursiones
+										tradicionales, paseos lacustres, nieve para todos los gustos, la mejor
+										gastronomía, turismo joven, salidas románticas, actividades familiares,
+										aventura, tranquilidad y una agenda cultural diversa. La ciudad te ofrece tantas
+										opciones que vas a querer visitarnos una y otra vez..</p>
+									<p><a href="#" class="btn btn-primary">Reserva tu estadia</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section testimony-section bg-bottom"
+		style="background-image: url(images/testimonios_paseos.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row justify-content-center pb-4">
+				<div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+					<span class="subheading">Testimoniales</span>
+					<h2 class="mb-4">Testimonios de nuestris visitantes</h2>
+				</div>
+			</div>
+			<div class="row ftco-animate">
+				<div class="col-md-12">
+					<div class="carousel-testimony owl-carousel">
+						<div class="item">
+							<div class="testimony-wrap py-4">
+								<div class="text">
+									<p class="star">
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+									</p>
+									<p class="mb-4">Quien haya estado en la "pre-patagonia" sabe lo lindo que es el
+										paisaje pero Bariloche y Villa La Angostura tienen una magia que me encanta cada
+										año (voy todos los años). La ciudad tiene sus límites bien marcados y basta con
+										que des un paso fuera para entrar en los maravillosos bosques y paisajes que la
+										rodean. La gente de ahí ha sabido aprovechar el espíritu de los bosques para
+										fines turísticos; por todos lados te venden hadas y duendes. Pero cada año que
+										voy, vuelvo a quedarme absorta mirando el lago Nahuel Huapi que surgen de la
+										nada entre los árboles mientras viajas por la carretera. Esta todo
+										Tan tranquilo y tan solo que piensas "aquí solo pueden vivir criaturas
+										mágicas"..</p>
+									<div class="d-flex align-items-center">
+										<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
+										<div class="pl-3">
+											<p class="name">Juan Manuel</p>
+											<span class="position">Docente</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap py-4">
+								<div class="text">
+									<p class="star">
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+									</p>
+									<p class="mb-4">Bariloche es una ciudad muy bella y con hermosos paisajes pero
+										inmensa a mis ojos que venía de estar en Pehuenia, el Lanín y Traful.
+										Personalmente prefiero pueblos más pequeños y no un gran centro turístico de
+										nivel internacional como es Bariloche, pero eso son gustos personales.
+										Sin embargo, hay que reconocer que es un excelente punto para hacer excursiones
+										y recorrer los atractivos turísticos de la zona. Volvería para hacer el Tronador
+										que es majestuoso.</p>
+									<div class="d-flex align-items-center">
+										<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
+										<div class="pl-3">
+											<p class="name">Ricardo Leiman</p>
+											<span class="position">Aventurero</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap py-4">
+								<div class="text">
+									<p class="star">
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+									</p>
+									<p class="mb-4">En mi experiencia fue uno de los mejores viajes que hice. El lugar
+										es simplemente impresionante, desde el Lago Nahuel Huapi, hasta el cerro Otto y
+										Catedral. El centro es un lugar muy lindo con una estructura toda de piedra y
+										madera. Las chocolaterías tienen un chocolate muy especial, en mi opinión la
+										mejor es Rapanui, desde el helado hasta el chocolate tiene un gusto excelente.
+										En los cerros se puede hacer snowboard, sky o culipatin, el más divertido y sin
+										técnicas es el culipatin, ya que es muy fácil manejarlo. También hay un bar de
+										hielo muy recomendable donde hay esculturas de hielo y te sirven en un vaso de
+										hielo.</p>
+									<div class="d-flex align-items-center">
+										<div class="user-img" style="background-image: url(images/person_3.jpg)"></div>
+										<div class="pl-3">
+											<p class="name">Carlos Monte</p>
+											<span class="position">Productor Musical</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap py-4">
+								<div class="text">
+									<p class="star">
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+									</p>
+									<p class="mb-4">Bellísimo, mas aun cuando llegas de Mendoza y el paisaje cambia 100%
+										teniendo en todo momento como fondo el lago nahuel huapi y los Andes. El pueblo
+										es hermoso, tranquilo y cuidado, aunque hay que resaltar que las cecinas del
+										volcán chileno han variado algo el color del paisaje. Lo recomiendo a todos
+										aquellos que buscan paisajes mágicos.</p>
+									<div class="d-flex align-items-center">
+										<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
+										<div class="pl-3">
+											<p class="name">Sebastian Romero</p>
+											<span class="position">Mecanico</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap py-4">
+								<div class="text">
+									<p class="star">
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+									</p>
+									<p class="mb-4">Uno de los lugares más visitados en la época invernal es San Carlos
+										de Bariloche, ya que su mayor atractivo es esquiar.... como me encanta ir
+										contracorriente lo visité en verano y no me equivoqué en absoluto... nunca
+										hubiésemos podido apreciar el encanto de sus los lagos, sus bosques, sus
+										colores, las espectaculares e inmensas montañas que nos rodeaban... una gozada
+										para los amantes de la naturaleza..</p>
+									<div class="d-flex align-items-center">
+										<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
+										<div class="pl-3">
+											<p class="name">Sebastian Milan</p>
+											<span class="position">Marketing Manager</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center pb-4">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<span class="subheading">Nuestro Blog</span>
+					<h2 class="mb-4">Posteos Recientes</h2>
+				</div>
+			</div>
+			<div class="row d-flex">
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="blog-single.html" class="block-20"
+							style="background-image: url('images/image_1.jpg');">
+						</a>
+						<div class="text">
+							<div class="d-flex align-items-center mb-4 topp">
+								<div class="one">
+									<span class="day">11</span>
+								</div>
+								<div class="two">
+									<span class="yr">2023</span>
+									<span class="mos">September</span>
+								</div>
+							</div>
+							<h3 class="heading"><a href="#">El lugar es hermoso, solitario, tranquilo y pacífico.
+									No hay otra urbanización más que la casa del Guardaparque.
+									El lago es navegable, y en nuestra ruta de descenso nos cruzamos con algunos
+									turistas que iban dispuestos a acampar en plena naturaleza y que llevaban
+									gomones.</a></h3>
+							<!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p> -->
+							<p><a href="#" class="btn btn-primary">leer mas</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="blog-single.html" class="block-20"
+							style="background-image: url('images/image_2.jpg');">
+						</a>
+						<div class="text">
+							<div class="d-flex align-items-center mb-4 topp">
+								<div class="one">
+									<span class="day">23</span>
+								</div>
+								<div class="two">
+									<span class="yr">2022</span>
+									<span class="mos">Agosto</span>
+								</div>
+							</div>
+							<h3 class="heading"><a href="#">Es un destino favorito de turistas que tiene experiencia en
+									esta zona, ya que no es de fácil acceso. Nos lo había recomendado el dueño de las
+									cabañas que alquilábamos, un Sr. Alemán, amante de la naturaleza. Según él le
+									recordaba paisajes de Alemania y Suiza.</a></h3>
+							<!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p> -->
+							<p><a href="#" class="btn btn-primary">leer mas</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry">
+						<a href="blog-single.html" class="block-20"
+							style="background-image: url('images/image_3.jpg');">
+						</a>
+						<div class="text">
+							<div class="d-flex align-items-center mb-4 topp">
+								<div class="one">
+									<span class="day">23</span>
+								</div>
+								<div class="two">
+									<span class="yr">2020</span>
+									<span class="mos">Julio</span>
+								</div>
+							</div>
+							<h3 class="heading"><a href="#">
+									MELITHA BLASCO
+									El LAGO STEFFEN está ubicado en la ...
+									El LAGO STEFFEN está ubicado en la Patagonia Argentina, Departamento de San Carlos
+									de Bariloche, Provincia de Rio Negro.
+									Este lago que está a 509 metros sobre el nivel del mar, tiene una superficie de 590
+									hectareas y ocupa un valle-glaciar.
+									Para acceder a él viniendo de la ciudad de Bariloche o desde El Bolsón por la ruta
+									40, se necesita descender por un camino muy empinado, lleno de vados y con muchas
+									piedras, por lo cual es conveniente ir con un vehículo de doble tracción si se
+									puede, unos 400 metros en un total de 6km.</a></h3>
+							<!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p> -->
+							<p><a href="#" class="btn btn-primary">Leer mas</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-intro ftco-section ftco-no-pt">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-12 text-center">
+					<div class="img" style="background-image: url(images/bg_2.jpg);">
+						<div class="overlay"></div>
+						<h2>Somos Turismo Arg</h2>
+						<p>Con alojamientos de calidad, la oferta de hoteles de nivel internacional, hosterías, cabañas,
+							hostels, campings y refugios de montaña dan cuenta de las más de ocho décadas de trayectoria
+							turística.</p>
+						<p class="mb-0"><a href="#" class="btn btn-primary px-4 py-3">Contactenos para mas
+								información</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="ftco-footer bg-bottom ftco-no-pt" style="background-image: url(images/bg_3.jpg);">
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-md pt-5">
+					<div class="ftco-footer-widget pt-md-5 mb-4">
+						<h2 class="ftco-heading-2">About</h2>
+						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+							there live the blind texts.</p>
+						<ul class="ftco-footer-social list-unstyled float-md-left float-lft">
+							<li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+							<li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+							<li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md pt-5 border-left">
+					<div class="ftco-footer-widget pt-md-5 mb-4 ml-md-5">
+						<h2 class="ftco-heading-2">Infromation</h2>
+						<ul class="list-unstyled">
+							<li><a href="#" class="py-2 d-block">Online Enquiry</a></li>
+							<li><a href="#" class="py-2 d-block">General Enquiries</a></li>
+							<li><a href="#" class="py-2 d-block">Booking Conditions</a></li>
+							<li><a href="#" class="py-2 d-block">Privacy and Policy</a></li>
+							<li><a href="#" class="py-2 d-block">Refund Policy</a></li>
+							<li><a href="#" class="py-2 d-block">Call Us</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md pt-5 border-left">
+					<div class="ftco-footer-widget pt-md-5 mb-4">
+						<h2 class="ftco-heading-2">Experience</h2>
+						<ul class="list-unstyled">
+							<li><a href="#" class="py-2 d-block">Adventure</a></li>
+							<li><a href="#" class="py-2 d-block">Hotel and Restaurant</a></li>
+							<li><a href="#" class="py-2 d-block">Beach</a></li>
+							<li><a href="#" class="py-2 d-block">Nature</a></li>
+							<li><a href="#" class="py-2 d-block">Camping</a></li>
+							<li><a href="#" class="py-2 d-block">Party</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md pt-5 border-left">
+					<div class="ftco-footer-widget pt-md-5 mb-4">
+						<h2 class="ftco-heading-2">Have a Questions?</h2>
+						<div class="block-23 mb-3">
+							<ul>
+								<li><span class="icon fa fa-map-marker"></span><span class="text">203 Fake St. Mountain
+										View, San Francisco, California, USA</span></li>
+								<li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929
+											210</span></a></li>
+								<li><a href="#"><span class="icon fa fa-paper-plane"></span><span
+											class="text">info@yourdomain.com</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+
+					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script> All rights reserved | This template
+						is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com"
+							target="_blank">Colorlib</a>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+	<script src="js/google-map.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
 </html>
