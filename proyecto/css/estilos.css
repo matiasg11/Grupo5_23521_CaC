@@ -86,6 +86,21 @@ a {
     justify-content: center;
 }
 
+.imgSalta {
+    display: grid;
+    width: 90%;
+    margin: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgJujuy {
+    display: grid;
+    width: 90%;
+    margin: 10%;
+    align-items: center;
+    justify-content: center;
+}
 
 .imagen {
     width: 300px;
@@ -115,6 +130,18 @@ a {
 }
 
 .mapaCataratas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mapaSalta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mapaJujuy {
     display: flex;
     align-items: center;
     justify-content: center;
