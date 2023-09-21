@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: rgb(190, 241, 243);
+
+}
+
+.textoacercadenos {
+
+    color: #000808;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.fotointegrantes {
+    width: 150px;
+    height: 150px;
+    margin: 0% auto;
+    margin-right: 20px;
+    background-position: center;
+    cursor: pointer;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 6px;
+    justify-content: center;
+    box-shadow: 5px 8px 12px;
+
+}
+
+.tituloacercadenos {
+
+    font-size: 50px;
+}
+
+.nombre {
+
+    text-align: center;
+    font-size: 15px;
+  
+
+}
+.contenedor{
+
+    display: flex;
+    justify-content:center; 
+}
