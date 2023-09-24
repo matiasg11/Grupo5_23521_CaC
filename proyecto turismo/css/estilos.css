@@ -208,24 +208,6 @@ h4 {
 
 }
 
-
-
-/* pseudoelemtos */
-
-
-p::first-letter {
-    color: rgb(68, 77, 4);
-    font-size: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-p::selection {
-    background-color: rgb(213, 215, 101);
-
-}
-
-
-
 /* Footer */
 
 .logo {
@@ -263,4 +245,61 @@ p::selection {
 
 .tituloFooter {
     color: rgb(182, 186, 189);
+}
+
+/*Servicios*/
+
+.centrado {
+    margin: 0 auto;
+    padding: 0 0.8em;
+    display: flex;
+}
+
+.tarjeta {
+    background: white;
+    margin-bottom: 2em;
+    width: 30%;
+}
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tarjeta a {
+    color: black;
+    text-decoration: none;
+}
+
+.tarjeta a:hover {
+    box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+}
+
+.tarjeta-content {
+    padding: 1.4em;
+
+}
+
+.tarjeta-content h2 {
+    margin-top: 0;
+    margin-bottom: .5em;
+    /* font-weight: normal; */
+    font-size: 95%;
+}
+
+.tarjeta-content p {
+    font-size: 80%;
+}
+
+figure {
+    margin: 0;
+}
+
+.img {
+    display: block;
+    border: 0;
+    width: 100%;
+    height: auto;
 }
