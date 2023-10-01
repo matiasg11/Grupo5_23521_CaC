@@ -4,9 +4,116 @@
     box-sizing: border-box;
 }
 
+.html {
+
+    height: 100%;
+}
+
+
+
+/*  Maquetación */
+
+.contenedor {
+
+    margin: 3px;
+    display: grid;
+    gap: 3px;
+   grid-template-columns: 1fr ; 
+    grid-template-rows: 3;
+    grid-template-areas: "header"
+        "main"
+        "footer"
+
+
+}
+
+.header {
+    
+    grid-area: header;
+    
+}
+
+.main {
+
+    width: 100%;
+    border-radius: 6px;
+    padding: 40px;
+    grid-area: main;
+    background-color: #a6a2eb;
+}
+
+
+
+
+
+/* header */
+.barraNav {
+    display: flex;
+    background-color: rgb(50, 45, 41);
+    justify-content: space-between;
+    border-radius: 6px;
+}
+
+.logoHeader {
+    margin: 20px;
+    display: flex;
+    width: 150px;
+
+}
+
+.menu {
+    margin: 20px;
+    color: rgb(182, 186, 189);
+    font-size: 30px;
+    text-align: center;
+}
+
+a {
+    color: rgb(182, 186, 189);
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.busqueda {
+    margin: 20px;
+    align-items: right;
+}
+
+.submit-boton,
+.input-box {
+    padding: 10px 20px;
+    border-radius: .5rem;
+    align-items: end;
+}
+
+.submit-boton {
+    background-color: rgb(251, 251, 251);
+    font-weight: bold;
+    cursor: pointer;
+    align-items: end;
+}
+
+.imgContenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgHeader {
+    width: 800px;
+    height: 400px;
+}
+
+/* Fin header */
+
+
+
+
+/* contenido quienes somos */
 
 body {
-    background-color: rgb(190, 241, 243);
+    background-color: rgb(160, 237, 169);
+    min-height: 100%;
 
 }
 
@@ -15,7 +122,9 @@ body {
     color: #000808;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
-    text-align: center;
+    text-align: justify;
+    margin: 20px;
+
 }
 
 .fotointegrantes {
@@ -35,18 +144,104 @@ body {
 
 .tituloacercadenos {
 
-    font-size: 50px;
+    font-size: 35px;
+    text-align: center;
+
 }
 
 .nombre {
 
     text-align: center;
     font-size: 15px;
-  
+
 
 }
-.contenedor{
+
+.fotocontainer {
 
     display: flex;
-    justify-content:center; 
+    justify-content: center;
+
+}
+
+/* fin contenido quienes somos */
+
+
+
+
+
+/* Footer */
+
+.logo {
+    width: 150px;
+    height: 80px;
+    padding: 10px;
+}
+
+.footer {
+    padding: 20px;
+    width: 100%;
+    background-color: rgb(50, 45, 41);
+    color: rgb(182, 186, 189);
+    display: flex;
+    justify-content: space-between;
+    grid-area: footer;
+    border-radius: 6px;
+}
+
+.submit-btn,
+.input-box {
+    padding: 10px 20px;
+    border-radius: .5rem;
+}
+
+.submit-btn {
+    background-color: rgb(251, 251, 251);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.redes {
+    width: 25px;
+    height: 25px;
+}
+
+.tituloFooter {
+    color: rgb(182, 186, 189);
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+    .contenedor {
+
+        grid-template-areas: "header"
+            "main"
+            "footer"
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .contenedor {
+
+        grid-template-areas: "header"
+            "main"
+            "footer"
+
+    }
+}
+
+@media screen and (max-width:220px) {
+
+    .contenedor {
+
+        grid-template-areas: "header"
+            "main"
+    
+            "footer"
+
+    }
 }
