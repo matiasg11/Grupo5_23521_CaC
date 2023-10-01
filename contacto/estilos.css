@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(242, 11, 11);
+    min-height: 100%;
+}
+
+html {
+
+    min-height: 100%;
+}
+
+/* Maquetacion  */
+
+.contenedor {
+    display: grid;
+    grid-gap: 1px;
+    grid-template-rows: repeat(4);
+    grid-template-columns: (1fr 1fr);
+    grid-template-areas: "header"
+        "main"
+        "sidebar"
+        "footer"
+}
+
+.header {
+
+    grid-area: header;
+}
+
+.sidebar {
+    background: #ead9a2;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    min-height: 100px;
+    justify-content: center;
+    grid-area: sidebar;
+    font-size: 12px;
+
+
+}
+
+.main {
+
+    grid-area: main;
+    border-radius: 4px;
+    background-color: #d6c2f3;
+    margin: auto;
+    padding: 40px;
+
+}
+
+.footer {
+    border-radius: 4px;
+    background: #12203E;
+    color: #fff;
+    grid-area: footer;
+
+
+}
+
+@media screen  and (max-width: 780px){
+
+.contenedor{
+    grid-template-areas: "header"
+                         "main"
+                         "sidebar"
+                         "footer"
+}
+}
+
+
+@media screen and (max-width: 220px){
+    .contenedor{
+        grid-template-areas: "header"
+                             "main"
+                            "sidebar"
+                             "footer"
+    }
+}
+
+
+
+
+
+
+/* fin de maquetado */
+
+/* header */
+.barraNav {
+    border-radius: 4px;
+    display: flex;
+    background-color: rgb(50, 45, 41);
+    justify-content: space-between;
+}
+
+.logoHeader {
+    margin: 20px;
+    display: flex;
+    width: 150px;
+
+}
+
+.menu {
+    margin: 20px;
+    color: rgb(182, 186, 189);
+    font-size: 30px;
+    text-align: center;
+}
+
+a {
+    color: rgb(182, 186, 189);
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.busqueda {
+    margin: 20px;
+    align-items: right;
+}
+
+.submit-boton,
+.input-box {
+    padding: 10px 20px;
+    border-radius: .5rem;
+    align-items: end;
+}
+
+.submit-boton {
+    background-color: rgb(251, 251, 251);
+    font-weight: bold;
+    cursor: pointer;
+    align-items: end;
+}
+
+.imgContenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgHeader {
+    width: 800px;
+    height: 400px;
+
+}
+
+/* FIN DEL HEADER */
+
+
+
+
+/* Footer */
+
+.logo {
+    width: 150px;
+    height: 80px;
+    padding: 10px;
+}
+
+.footer {
+    padding: 20px;
+    width: 100%;
+    background-color: rgb(50, 45, 41);
+    color: rgb(182, 186, 189);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.submit-btn,
+.input-box {
+    padding: 10px 20px;
+    border-radius: .5rem;
+}
+
+.submit-btn {
+    background-color: rgb(251, 251, 251);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.redes {
+    width: 25px;
+    height: 25px;
+}
+
+.tituloFooter {
+    color: rgb(182, 186, 189);
+}
+
+/*  formulario */
+
+.form {
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin: 20px;
+    text-align: center;
+
+}
+
+.tituloform {
+
+    text-align: center;
+    margin: 10px;
+}
+
+.consulta {
+
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+
+.formulario__grupo {
+    justify-content: center;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+::placeholder {
+
+    text-align: center;
+}
+
+#apellido {
+
+    width: 350px;
+    height: 40px;
+
+}
+
+#nombre {
+
+    width: 350px;
+    height: 40px;
+
+}
+
+#correo {
+    width: 350px;
+    height: 40px;
+}
+
+#phone {
+    width: 350px;
+    height: 40px;
+
+}
+
+#botoncomentario {
+    width: 150px;
+    height: 40px;
+
+}
+
+
+/* boton naranja de error */
+.formulario__input-error {
+
+    font-size:15px;
+    margin-bottom: 0;
+    display: none; 
+} 
+
+.formulario__input-error-activo {
+
+    display: block;
+}
+
+label {
+
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#formulario__mensaje {
+
+    text-align: center;
+
+}
+
+input:focus {
+    outline: none;
+    border: solid #0075ff;
+
+}
+
+.formulario__validacion-estado {
+
+    /* position: absolute; */
+    right: 10px;
+    bottom: 45px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;   
+}
+
+/* boton naranja error */
+ .formulario__mensaje {
+
+    height: 45px;
+    line-height: 45px;
+    background: #f66860;
+    padding: 0 15px;
+    border-radius: 3px;
+   display: none; 
+
+    .formulario__mensaje-activo{
+
+        display: block;
+    }
+
+}
+.formulario__mensaje p{
+
+    margin: 0;
+}
+/* boton de enviar */
+.formulario__btn{
+
+height: 45px;
+border-radius: 3px;
+line-height: 45px;
+width: 15%;
+background: #000;
+font-weight: bold;
+cursor: pointer;
+border: none;
+color: #fff; }
+
+/* mensaje de completado exitoso */
+
+.formulario__mensaje-exito{
+
+    font-size: 14px;
+    color: #119200;
+    display: none; 
+}
+.formulario__mensaje-exito-activo{
+
+    display: block;
+}
+
+
+/*  Muestra de iconos cuando los estados son correctos o incorrectos */
+/* .formulario__grupo-correcto .formulario__validacion-estado 
+
+
+{
+
+color: #1ed12e;
+opacity: 1;
+} 
+
+.formulario__grupo-incorrecto .formulario__validacion-estado{
+
+    color: #bb2929;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input{
+
+    border: 3px solid #bb2929;
+} */

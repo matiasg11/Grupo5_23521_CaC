@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body class="contenedor">
+    <!-- header -->
+
+    <header class="header">
+
+        <nav class="barraNav">
+            <span>
+                <img class="logoHeader" src="img/logo/logoHeader.png" alt="logoheader">
+            </span>
+
+
+            <span class="menu">
+                <a href="#">Inicio |</a>
+                <a href=""> Contacto |</a>
+                <a href=""> Servicios |</a>
+                <a href=""> Sobre Nosotros |</a>
+                <a href=""> Reservas </a>
+                <br><br>
+                <div>Agencia de Turismo</div>
+            </span>
+
+            <span class="busqueda">
+                <input class="input-box" placeholder="Buscar en la Web" />
+                <button class="submit-boton">buscar</button>
+            </span>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO DE CONTACTO -->
+    <main class="main">
+
+        <form action="" class="formulario" id="formulario">
+
+            <br>
+
+            <h1 class="tituloform">Completa el siguiente formulario y unos de nuestros representantes se
+                conectará contigo en breve</h1>
+            <br>
+            <!-- grupo nombre  -->
+
+            <div class="formulario__grupo formulario__grupo-correcto " id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Nombre</label>
+
+                <div class="formulario__grupo-input">
+
+                    <input type="text" class="formulario__input" name="nombre" id="nombre"
+                        placeholder="Ingrese su nombre">
+
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+
+                <p class="formulario__input-error">El nombre tiene que tener de 4 a 30 letras.
+                </p>
+            </div>
+            <br>
+
+
+            <!-- grupo Apellido -->
+            <div class="formulario__grupo" id="grupo__apellido">
+                <label for="apellido" class="formulario__label">Apellido</label>
+
+                <div class="formulario__grupo-input">
+
+                    <input type="text" class="formulario__input" name="apellido" id="apellido"
+                        placeholder="Ingrese su apellido">
+
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+
+                <p class="formulario__input-error">El apellido tiene que tener de 4 a 30 letras.
+                </p>
+            </div>
+
+            <br>
+
+
+            
+            <!-- correo electronico -->
+            <div class="formulario__grupo" id="grupo__correo">
+                <label for="correo" class="formulario__label">Correo Electrónico</label>
+
+                <div class="formulario__grupo-input">
+
+                    <input type="text" class="formulario__input" name="correo" id="correo"
+                        placeholder="Ingrese su mail">
+
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+
+                <p class="formulario__input-error">Debe contener @
+                </p>
+            </div>
+            <br>
+            <!-- Grupo: Teléfono -->
+            <div class="formulario__grupo" id="grupo__telefono">
+                <label for="telefono" class="formulario__label">Teléfono</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="telefono" id="phone"
+                        placeholder="Ingrese su teléfono">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+
+                <p class="formulario__input-error">El teléfono solo puede contener números y el máximo son 14
+                    dígitos.
+                </p>
+
+            </div>
+
+            <br><br>
+            <hr>
+            <br>
+
+            <!-- Deje aqui su consulta -->
+
+            <div class="consulta">
+                <label for="comentarios">Deje aquí su consulta: </label>
+                <br>
+                <textarea name="comentarios" id="comentarios" cols="55" rows="10"></textarea>
+            </div>
+
+            <br>
+
+
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                <p class=><i class="fas fa-exclamation-triangle"></i><b>Error:</b> Por favor rellena el formulario
+                    correctamente. </p>
+            </div>
+            
+
+<br>
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="submit" class="formulario__btn">Enviar</button><br><br>
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+            </div>
+<br>
+        </form>
+
+    </main>
+
+    <!-- sidebar -->
+    <aside class="sidebar">
+        <span>
+            <span>
+                <h1>E-mail: </h1>
+            </span>
+            <span>
+                <h3>turismocuatro@mail.com</h3>
+            </span> <br>
+            <span>
+                <h1>Teléfono: </h1>
+            </span>
+            <span>
+                <h3>0355-604527</h3>
+            </span><br>
+            <span>
+                <h1>Ubicacion: </h1>
+            </span>
+            <span>
+                <h3>Av. San Martín 5555 -Bs. As.</h3>
+            </span> <br>
+        </span>
+
+    </aside>
+
+
+    <!-- fooooooooterrrrr -->
+    <footer class="footer">
+
+        <span>
+            <div>
+                <img class="logo" src="img/logo/argentinalogo.png" alt="logofooter">
+            </div>
+
+            <span>
+                <h4 class="tituloFooter">Un mundo por descubrir.</h4>
+                <h4 class="tituloFooter">Excelencia en viajes.</h4>
+            </span>
+
+            <span>
+                <input type="text" placeholder="tu-mail@email.com" class="input-box">
+                <button class="submit-btn">enviar</button>
+            </span>
+        </span>
+
+        <span>
+            <div>
+                <h4 class="tituloFooter">Quick Nav</h4><br>
+                <div>Inicio</div>
+                <div>Portafolio</div>
+                <div>Sobre Nosotros</div>
+                <div>Servicios</div>
+            </div>
+        </span>
+        <span>
+            <div>
+                <h4 class="tituloFooter">Politica de Privacidad</h4><br>
+                <div>Politica de Privacidad</div>
+                <div>Terminos del Servicio</div>
+            </div>
+            <br><br><br><br><br>
+            <div>
+                <span>Copyright &copy; 2023 Agencia de turismo.</span>
+            </div>
+        </span>
+        <span>
+            <div>
+                <h4 class="tituloFooter">Contacto</h4><br>
+                <div>e-mail</div>
+                <div>Telefono</div>
+                <div>Redes Sociales</div>
+            </div>
+        </span>
+
+        <span>
+            <span><a href=https://es-la.facebook.com/" target="_blank"><img class="redes"
+                        src="img/iconosRedesSociales/facebook.png" alt="facebook"></a></span>
+            <span><a href="https://www.google.com/intl/es-419/gmail/about/" target="_blank"><img class="redes"
+                        src="img/iconosRedesSociales/gmail.png" alt="gmail"></a></span>
+            <span><a href="https://www.instagram.com" target="_blank"><img class="redes"
+                        src="img/iconosRedesSociales/instagram.png" alt="instagram"></a></span>
+            <span><a href="https://ar.linkedin.com" target="_blank"><img class="redes"
+                        src="img/iconosRedesSociales/linkedin.png" alt="linkedin"></a></span>
+            <span><a href="https://www.tiktok.com/es" target="_blank"><img class="redes"
+                        src="img/iconosRedesSociales/tik-tok.png" alt="tik-tok"></a></span>
+            <span><a href="https://twitter.com/Twitter" target="_blank"><img class="redes"
+                        src="img/iconosRedesSociales/twitter.png" alt="twitter"></a></span>
+            <span><a href="https://web.whatsapp.com/%F0%9F%8C%90/es" target="_blank"><img class="redes"
+                        src="img/iconosRedesSociales/whatsapp.png" alt="whatsapp"></a></span>
+
+        </span>
+    </footer>
+
+    <!-- Fin footer simple -->
+
+    <script src="js/formulario.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
